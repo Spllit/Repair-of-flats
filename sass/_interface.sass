@@ -1,0 +1,59 @@
+body
+    box-sizing: border-box
+a
+    text-decoration: none
+
+.container
+    max-width: 1171px
+    width: 95%
+    margin-left: auto
+    margin-right: auto
+@media screen and (max-width: 320px)
+    .container
+        max-width: 277px
+        min-width: 270px  
+        margin-left: auto
+        margin-right: auto
+@media screen and (max-width: 375px) and (min-width: 321px)
+    .container
+        max-width: 332px
+        margin-left: auto
+        margin-right: auto            
+@media screen and (max-width: 425px) and (min-width: 376px)
+    .container
+        max-width: 382px
+        margin-left: auto
+        margin-right: auto    
+=btn
+    color: $text
+    border-radius: 10px
+    background-color: $yellow
+=title
+    +bold
+    margin: 0
+    font-size: 18px
+=subtitle
+    +reg
+    margin: 0
+    font-size: 14px
+.title
+    +title
+.subtitle
+    +subtitle
+.btn
+    +btn  
+.input
+    display: block
+    box-sizing: border-box
+    background-color: #fff
+    border: 1px solid $input
+    border-radius: 10px
+    padding: 26px 0 26px 23px
+    +reg
+    &::placeholder
+        color: #999
+        +reg
+        line-height: 24px
+        font-size: 15px
+    &:focus
+        outline: none

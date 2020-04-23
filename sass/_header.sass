@@ -1,0 +1,39 @@
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding-top: 17px
+    padding-bottom: 17px
+    img
+        width: 90px
+    &__contact
+        display: flex
+        flex-direction: row
+
+    &__info
+        display: flex
+        flex-direction: column    
+        color: $text
+        text-align: right
+    @media screen and ( max-width: 425px ) 
+        .navbar__info
+            display: none
+    &__adress
+        font-size: 13px
+        +reg
+    &__tel
+        color: $text
+        font-size: 20px
+        +bold
+        &:hover
+            cursor: pointer
+    &__callme
+        +btn
+        padding: 15px 26px
+        font-size: 10px
+        color: $text
+        margin-left: 30px
+        +bold
+        &:hover
+            cursor: pointer

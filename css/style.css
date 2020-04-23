@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/Museo Sans/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans 500 Medium';
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-500.eot");
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/Museo Sans/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/Museo Sans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo Sans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo Sans/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1171px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 277px;
+    min-width: 270px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .container {
+    max-width: 332px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .container {
+    max-width: 382px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.title {
+  font-family: 'Museo Sans 700 Bold';
+  font-weight: 900;
+  margin: 0;
+  font-size: 18px; }
+
+.subtitle {
+  font-family: 'Museo Sans 300 Light';
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px; }
+
+.btn {
+  color: #333;
+  border-radius: 10px;
+  background-color: #ffd200; }
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 26px 0 26px 23px;
+  font-family: 'Museo Sans 300 Light';
+  font-weight: 300; }
+  .input::placeholder {
+    color: #999;
+    font-family: 'Museo Sans 300 Light';
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 15px; }
+  .input:focus {
+    outline: none; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 17px;
+  padding-bottom: 17px; }
+  .navbar img {
+    width: 90px; }
+  .navbar__contact {
+    display: flex;
+    flex-direction: row; }
+  .navbar__info {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    text-align: right; }
+  @media screen and (max-width: 425px) {
+    .navbar .navbar__info {
+      display: none; } }
+  .navbar__adress {
+    font-size: 13px;
+    font-family: 'Museo Sans 300 Light';
+    font-weight: 300; }
+  .navbar__tel {
+    color: #333;
+    font-size: 20px;
+    font-family: 'Museo Sans 700 Bold';
+    font-weight: 900; }
+    .navbar__tel:hover {
+      cursor: pointer; }
+  .navbar__callme {
+    color: #333;
+    border-radius: 10px;
+    background-color: #ffd200;
+    padding: 15px 26px;
+    font-size: 10px;
+    color: #333;
+    margin-left: 30px;
+    font-family: 'Museo Sans 700 Bold';
+    font-weight: 900; }
+    .navbar__callme:hover {
+      cursor: pointer; }
+
+.main {
+  background-color: #f5f5f5;
+  padding-top: 46px;
+  padding-bottom: 52px; }
+  .main__title {
+    padding-bottom: 13px;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    font-family: 'Museo Sans 700 Bold';
+    font-weight: 900; }
+  .main__subtitle {
+    font-size: 16px;
+    padding-bottom: 28px;
+    margin: 0;
+    font-family: 'Museo Sans 500 Medium';
+    font-weight: 700; }
+
+.advantages {
+  display: flex;
+  flex-direction: column; }
+  .advantages__img {
+    width: 40px;
+    height: 40px;
+    position: relative; }
+  .advantages__item {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25%;
+    top: 25%; }
+  .advantages__row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px; }
+  .advantages__span {
+    margin-left: 15px;
+    font-family: 'Museo Sans 500 Medium';
+    font-weight: 700;
+    font-size: 12px; }
+
+.main__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 38px; }
+
+.offer {
+  padding-top: 53px;
+  padding-bottom: 56px;
+  background: url(../img/offer/bgi.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center right;
+  position: relative; }
+  .offer::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-position: center left;
+    background-color: #fff;
+    top: 0;
+    left: 0; }
+  .offer__block {
+    position: relative; }
+  .offer__container {
+    width: 40%; }
+  .offer__header {
+    width: 60%; }
+  .offer__form {
+    width: 100%; }
+  .offer__btn {
+    padding: 0;
+    border: none;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Museo Sans 500 Medium';
+    font-weight: 700; }
+    .offer__btn:hover {
+      cursor: pointer; }
+  .offer__input {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 48%; }
+    .offer__input:nth-child(1) {
+      margin-right: 10px; }
+
+@media screen and (max-width: 919px) and (min-width: 545px) {
+  .offer__container {
+    width: 47%; }
+  .offer__header {
+    width: 80%; } }
+
+@media screen and (max-width: 782px) {
+  .offer__header {
+    width: 100%; }
+  .offer__input {
+    display: block;
+    width: 100%; } }
+
+.offer__title {
+  font-family: 'Museo Sans 700 Bold';
+  font-weight: 900;
+  margin: 0;
+  font-size: 18px;
+  padding-bottom: 20px; }
+
+.offer__subtitle {
+  font-family: 'Museo Sans 300 Light';
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 27px; }
+
+.offer__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  flex-wrap: wrap; }
+
+.offer__incall {
+  font-family: 'Museo Sans 300 Light';
+  font-weight: 300;
+  font-size: 15px;
+  flex-basis: 47%;
+  padding-right: 10px;
+  margin-bottom: 10px; }
+
+.offer__outcall {
+  font-family: 'Museo Sans 300 Light';
+  font-weight: 300;
+  font-size: 15px;
+  flex-basis: 50%; }
+
+.offer__tel {
+  display: block;
+  color: #333;
+  font-size: 15px;
+  font-family: 'Museo Sans 700 Bold';
+  font-weight: 900; }
+  .offer__tel:hover {
+    cursor: pointer; }
+
+@media screen and (max-width: 744px) {
+  .offer__incall {
+    flex-basis: 100%; }
+  .offer__outcall {
+    flex-basis: 100%; } }

@@ -1,0 +1,104 @@
+.offer   
+    padding-top: 53px
+    padding-bottom: 56px
+    background: url(../img/offer/bgi.jpg) no-repeat  
+    background-size: cover
+    height: 100%
+    background-position: center right
+    position: relative
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        background-position: center left
+        background-color: #fff
+        top: 0
+        left: 0
+    &__block
+        position: relative
+    &__container
+        width: 40%
+    &__header
+        width: 60%
+    &__form
+        width: 100%
+    &__btn 
+        padding: 0
+        border: none
+        padding-top: 27px
+        padding-bottom: 27px
+        width: 100%
+        font-size: 16px
+        +medium
+        &:hover
+            cursor: pointer
+    &__input
+        display: inline-block
+        margin-bottom: 10px
+        width: 48%
+        &:nth-child(1)
+            margin-right: 10px
+@media screen and ( max-width: 919px ) and (min-width: 545px)
+    .offer__container
+        width: 47%
+    .offer__header
+        width: 80%
+@media screen and ( max-width: 782px )
+    .offer__header
+        width: 100%
+    .offer__input
+        display: block
+        width: 100%   
+.offer__title
+    +title
+    padding-bottom: 20px
+.offer__subtitle
+    +subtitle
+    padding-bottom: 27px
+.offer__footer
+    display: flex
+    justify-content: space-between
+    margin-top: 33px
+    flex-wrap: wrap
+.offer__incall
+    +reg
+    font-size: 15px
+    flex-basis: 47%
+    padding-right: 10px
+    margin-bottom: 10px
+.offer__outcall
+    +reg
+    font-size: 15px
+    flex-basis: 50%
+.offer__tel
+    display: block
+    color: $text
+    font-size: 15px
+    +bold
+    &:hover
+        cursor: pointer
+@media screen and ( max-width: 744px )
+    .offer__incall
+        flex-basis: 100%
+    .offer__outcall
+        flex-basis: 100%
+    
+// @media screen and ( min-width: 769px )
+//     .offer    
+//         background-color: #fff
+//         background-position: center right
+//         // background-size: contain
+//         position: relative
+//     .offer::before
+//         content: ''
+//         width: 50%
+//         height: 100%
+//         position: absolute
+//         background-position: center left
+//         background-color: #fff
+//     .offer__container
+//         position: relative
+    
+            
+        

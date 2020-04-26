@@ -92,7 +92,7 @@ a {
   flex-wrap: wrap;
   padding-top: 17px;
   padding-bottom: 17px; }
-  .navbar img {
+  .navbar__logo_img {
     width: 90px; }
   .navbar__contact {
     display: flex;
@@ -102,7 +102,7 @@ a {
     flex-direction: column;
     color: #333;
     text-align: right; }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 456px) {
     .navbar .navbar__info {
       display: none; } }
   .navbar__adress {
@@ -129,6 +129,17 @@ a {
     .navbar__callme:hover {
       cursor: pointer; }
 
+@media screen and (min-width: 768px) {
+  .navbar__logo_img {
+    width: 155px; }
+  .navbar__callme {
+    font-size: 13px;
+    width: 170px;
+    height: 49px; }
+  .navbar {
+    padding-top: 7px;
+    padding-bottom: 7px; } }
+
 .main {
   background-color: #f5f5f5;
   padding-top: 46px;
@@ -150,6 +161,11 @@ a {
 .advantages {
   display: flex;
   flex-direction: column; }
+  .advantages__items {
+    display: flex;
+    align-items: center; }
+  .advantages > div:not(:last-child) {
+    margin-bottom: 20px; }
   .advantages__img {
     width: 40px;
     height: 40px;
@@ -160,20 +176,52 @@ a {
     position: absolute;
     left: 25%;
     top: 25%; }
-  .advantages__row {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px; }
   .advantages__span {
     margin-left: 15px;
     font-family: 'Museo Sans 500 Medium';
     font-weight: 700;
     font-size: 12px; }
+  .advantages .main_image {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    height: 231px; }
 
-.main__img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 38px; }
+@media screen and (max-width: 769px) and (min-width: 426px) {
+  .main__img_image {
+    width: 350px;
+    height: 350px; } }
+
+@media screen and (min-width: 769px) {
+  .main {
+    padding-top: 50px;
+    padding-bottom: 52px; }
+  .main__flex-wrap {
+    display: flex; }
+  .main__flex-item-left {
+    padding-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .main__img_image {
+    width: 570px;
+    height: 488px; }
+  .main__title {
+    font-size: 40px;
+    line-height: 55px;
+    padding-bottom: 45px; }
+  .main__subtitle {
+    font-size: 20px;
+    padding-bottom: 70px; }
+  .advantages__span {
+    font-size: 14px; } }
+
+@media screen and (max-width: 1171px) {
+  .main__flex-item-left {
+    padding-right: 7%; } }
+
+@media screen and (max-width: 1093px) {
+  .main__flex-item-left {
+    padding-right: 5%; } }
 
 .offer {
   padding-top: 53px;

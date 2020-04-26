@@ -5,7 +5,7 @@
     flex-wrap: wrap
     padding-top: 17px
     padding-bottom: 17px
-    img
+    &__logo_img
         width: 90px
     &__contact
         display: flex
@@ -16,7 +16,7 @@
         flex-direction: column    
         color: $text
         text-align: right
-    @media screen and ( max-width: 425px ) 
+    @media screen and ( max-width: 456px ) 
         .navbar__info
             display: none
     &__adress
@@ -37,3 +37,14 @@
         +bold
         &:hover
             cursor: pointer
+@media screen and ( min-width: 768px )
+    .navbar__logo_img
+        width: 155px
+    .navbar__callme
+        font-size: 13px
+        width: 170px
+        height: 49px
+    .navbar
+        padding-top: 7px
+        padding-bottom: 7px
+    

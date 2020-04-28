@@ -1,0 +1,31 @@
+.portfolio
+    background-color: $grey
+    padding-top: 43px
+    padding-bottom: 64px
+    &__title
+        margin-bottom: 40px
+        max-width: 786px
+        margin: auto
+.slider__arrows
+    display: flex
+    margin: auto
+    margin-top: 46px
+    max-width: 120px
+    justify-content: space-between
+.left-arrow, .right-arrow
+    &:hover
+        cursor: pointer
+.slider__img
+    margin: auto
+@media screen and ( min-width: 426px )
+    .portfolio
+        background: $grey url('../img/portfolio/bg.jpg') repeat-y top left
+        background-size: 50%
+@media screen and ( max-width: 425px )
+    .portfolio__title
+        font-size: 23px
+        margin-bottom: 60px
+@media screen and (min-width: 426px )
+    .portfolio__title
+        font-size: 30px
+        margin-bottom: 100px

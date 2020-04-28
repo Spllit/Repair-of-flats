@@ -39,7 +39,42 @@
         width: 48%
         &:nth-child(1)
             margin-right: 10px
-@media screen and ( max-width: 919px ) and (min-width: 545px)
+    &__title
+        +title
+        padding-bottom: 20px
+        text-align: left
+    &__subtitle
+        +subtitle
+        padding-bottom: 27px
+        text-align: left
+    &__footer
+        display: flex
+        justify-content: space-between
+        margin-top: 33px
+        flex-wrap: wrap
+    &__incall
+        +reg
+        font-size: 15px
+        flex-basis: 47%
+        padding-right: 10px
+        margin-bottom: 10px
+    &__outcall
+        +reg
+        font-size: 15px
+        flex-basis: 50%
+    &__tel
+        display: block
+        color: $text
+        font-size: 15px
+        +bold
+        &:hover
+            cursor: pointer
+@media screen and ( max-width: 768px )
+    .offer
+        background: #fff
+    .offer__container
+        width: 100%
+@media screen and ( max-width: 919px ) and (min-width: 769px)
     .offer__container
         width: 47%
     .offer__header
@@ -50,40 +85,16 @@
     .offer__input
         display: block
         width: 100%   
-.offer__title
-    +title
-    padding-bottom: 20px
-.offer__subtitle
-    +subtitle
-    padding-bottom: 27px
-.offer__footer
-    display: flex
-    justify-content: space-between
-    margin-top: 33px
-    flex-wrap: wrap
-.offer__incall
-    +reg
-    font-size: 15px
-    flex-basis: 47%
-    padding-right: 10px
-    margin-bottom: 10px
-.offer__outcall
-    +reg
-    font-size: 15px
-    flex-basis: 50%
-.offer__tel
-    display: block
-    color: $text
-    font-size: 15px
-    +bold
-    &:hover
-        cursor: pointer
-@media screen and ( max-width: 744px )
+@media screen and ( max-width: 768px ) and (min-width: 426px)
+    .offer__incall
+        flex-basis: 45%
+    .offer__outcall
+        flex-basis: 45%
+@media screen and ( max-width: 425px )
     .offer__incall
         flex-basis: 100%
     .offer__outcall
         flex-basis: 100%
-
     
             
         

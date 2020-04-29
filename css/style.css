@@ -390,7 +390,7 @@ a {
 
 .prices {
   padding-top: 52px;
-  padding-bottom: 55px; }
+  margin-bottom: 55px; }
   .prices__title {
     margin: auto;
     margin-bottom: 27px;
@@ -463,7 +463,7 @@ a {
 @media screen and (min-width: 620px) {
   .prices {
     padding-top: 100px;
-    padding-bottom: 162px; }
+    margin-bottom: 162px; }
     .prices__title {
       font-size: 30px;
       margin-bottom: 58px; }
@@ -477,3 +477,20 @@ a {
 @media screen and (max-width: 620px) {
   .card {
     flex-basis: 100%; } }
+
+.steps__header {
+  margin-bottom: 34px; }
+
+.steps__title {
+  margin-bottom: 27px; }
+
+.items {
+  display: flex;
+  justify-content: space-between; }
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 180px; }
+  .item__footer {
+    margin-top: 25px; }

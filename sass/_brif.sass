@@ -1,0 +1,171 @@
+.brif
+    padding-top: 46px
+    padding-bottom: 35px
+    background: url('../img/brif/brif__bgc.jpg'), url('../img/brif/brif__img.jpg')
+    background-position: left center, right center
+    background-size: 50%, contain
+    background-repeat: repeat-y, no-repeat
+    &__wrap
+        display: flex
+    &__interview
+        padding-right: 70px
+    &__title
+        max-width: 515px
+        width: 100%
+        margin-bottom: 50px
+        font-size: 22px
+        text-align: left
+    &__subtitle
+        font-size: 16px
+        text-align: left
+        margin-bottom: 95px
+    &__list
+        display: flex
+        flex-direction: column
+        padding: 0
+        +reg
+        font-weight: 700
+    &__item
+        display: flex
+        align-items: center      
+    &__item:not(:last-child)
+        margin-bottom: 25px
+    &__counter
+        width: 35px
+        height: 35px
+        border: 2px solid $text 
+        line-height: 35px
+        text-align: center
+        border-radius: 50%
+    &__text
+        max-width: 379px
+        margin-left: 32px
+        width: 100%
+    &__form
+        padding-left: 213px
+    &__input-name
+        margin-bottom: 15px
+        height: 35px
+        width: 100%
+        &:focus
+            border: 1px solid $orange
+    &__input-tel
+        margin-bottom: 30px
+        height: 35px
+        width: 100%
+        &:focus
+            border: 1px solid $orange
+    &__btn
+        +btn
+        border: none
+        height: 70px
+        width: 100%
+        +medium
+        font-size: 16px
+        &:focus
+            outline: none
+    .form
+        &__title
+            margin-bottom: 52px
+        &__subtitle
+            margin-bottom: 50px
+        &__underform
+            display: block
+            margin-top: 33px
+            +reg
+            font-size: 15px
+            text-align: center 
+@media screen and ( max-width: 425px )
+    .brif
+        padding-top: 46px
+        padding-bottom: 34px
+        background-position: center top, center bottom
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat
+        &__wrap
+            flex-direction: column
+        &__interview
+            flex-basis: 100%
+            padding-right: 0
+            padding-bottom: 68px
+        &__form
+            padding-left: 0
+        &__title
+            font-size: 18px
+            margin-bottom: 16px
+        &__subtitle
+            font-size: 14px
+            margin-bottom: 39px
+        &__list
+            font-size: 14px
+            margin-bottom: 0
+        &__text
+            margin-left: 8px
+        &__input-name
+            margin-bottom: 8px
+        &__input-tel
+            margin-bottom: 10px
+    .form
+        padding-top: 60px
+        &__title
+            width: 100%
+            font-size: 18px
+            margin-bottom: 27px
+        &__subtitle
+            width: 100%
+            font-size: 14px
+            margin-bottom: 34px
+        &__underform
+            width: 150px
+            margin: auto
+            margin-top: 31px
+@media screen and ( max-width: 768px )
+    .brif
+        padding-top: 46px
+        padding-bottom: 34px
+        background-position: center top, center bottom
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat
+        &__wrap
+            flex-direction: column
+        &__interview
+            flex-basis: 100%
+            padding-right: 0
+            padding-bottom: 68px
+            margin-left: auto
+            margin-right: auto
+        &__form
+            padding-left: 0
+        &__title
+            text-align: center
+            font-size: 18px
+            margin-bottom: 16px
+        &__subtitle
+            text-align: center
+            font-size: 14px
+            margin-bottom: 39px
+    .form
+        padding-top: 60px
+        &__title
+            width: 100%
+            font-size: 18px
+            margin-bottom: 17px
+        &__subtitle
+            width: 100%
+            font-size: 14px
+            margin-bottom: 34px
+        &__underform
+            margin: auto
+            margin-top: 31px
+@media screen and ( max-width: 1024px ) and (min-width: 769px)
+    .brif
+        &__form
+            padding-left: 100px
+        &__interview
+            padding-right: 50px
+        &__text
+            margin-left: 15px
+        &__subtitle
+            margin-bottom: 45px
+
+    
